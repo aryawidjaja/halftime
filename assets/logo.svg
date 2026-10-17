@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Halftime">
+  <title>Halftime</title>
+  <!-- An open book with a pause on the right page: a break spent learning. -->
+  <rect width="128" height="128" rx="30" fill="#1F1E1D"/>
+  <path d="M64 40 C53 32 39 31 26 33 V93 C39 91 53 92 64 100 Z" fill="#E4E0D8"/>
+  <path d="M64 40 C75 32 89 31 102 33 V93 C89 91 75 92 64 100 Z" fill="#D97757"/>
+  <rect x="74" y="50" width="7" height="30" rx="3.5" fill="#1F1E1D"/>
+  <rect x="86" y="50" width="7" height="30" rx="3.5" fill="#1F1E1D"/>
+</svg>

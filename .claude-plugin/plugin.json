@@ -1,0 +1,65 @@
+{
+  "name": "halftime",
+  "version": "1.0.0",
+  "description": "When you hit a Claude usage limit, take a short course on what Claude just did in your project: a briefing, lessons on its real topics, quizzes and a badge.",
+  "author": {
+    "name": "Aryawijaya"
+  },
+  "license": "MIT",
+  "keywords": [
+    "learning",
+    "usage-limit",
+    "rate-limit",
+    "education",
+    "vibe-coding"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "autoOpen": {
+      "type": "boolean",
+      "title": "Open Halftime when you hit a usage limit",
+      "description": "Off: Halftime stays quiet until you type /halftime.",
+      "default": true
+    },
+    "prebake": {
+      "type": "boolean",
+      "title": "Write the course without asking",
+      "description": "Off by default: near a limit, Halftime asks once above your prompt (Prepare, Always or Not now) before its one small request. On: it writes the course without asking, once per limit window.",
+      "default": false
+    },
+    "prebakeAt": {
+      "type": "number",
+      "title": "Ask at this percent of your limit",
+      "default": 85,
+      "min": 50,
+      "max": 98,
+      "description": "The percent of a limit window at which Halftime asks to write the course (or writes it, if prebake is on). It never asks above 95%."
+    },
+    "autoContinue": {
+      "type": "boolean",
+      "title": "Continue Claude's work when the limit resets",
+      "description": "Only if Claude Code has not already continued by itself, and never if you turned off Continue automatically at usage limit in /config.",
+      "default": true
+    },
+    "minWaitMinutes": {
+      "type": "number",
+      "title": "Open only when the wait is at least this many minutes",
+      "default": 5,
+      "min": 0,
+      "max": 120,
+      "description": "Shorter waits only show the countdown in the status line."
+    },
+    "model": {
+      "type": "string",
+      "title": "Model that writes the course",
+      "description": "haiku (default, the lightest model: about a twentieth of the cost of sonnet) or sonnet.",
+      "default": "haiku"
+    }
+  },
+  "homepage": "https://github.com/aryawidjaja/halftime",
+  "repository": "https://github.com/aryawidjaja/halftime",
+  "documentationUrl": "https://github.com/aryawidjaja/halftime#readme",
+  "supportUrl": "https://github.com/aryawidjaja/halftime/issues",
+  "privacyPolicyUrl": "https://github.com/aryawidjaja/halftime#privacy",
+  "termsOfServiceUrl": "https://github.com/aryawidjaja/halftime/blob/main/LICENSE"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "halftime",
+  "owner": {
+    "name": "Aryawijaya"
+  },
+  "description": "When you hit a Claude usage limit, take a short course on what Claude just did in your project: a briefing, lessons on its real topics, quizzes and a badge.",
+  "plugins": [
+    {
+      "name": "halftime",
+      "source": "./",
+      "description": "When you hit a Claude usage limit, take a short course on what Claude just did in your project: a briefing, lessons on its real topics, quizzes and a badge."
+    }
+  ]
+}
